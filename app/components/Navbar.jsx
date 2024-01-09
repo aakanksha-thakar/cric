@@ -46,6 +46,12 @@ const Navbar = () => {
             <Link href="/profile">Profile</Link>
           </li>
         )}
+
+        {!user ? null : (
+          <li className="p-2 cursor-pointer">
+            <Link href="/RecordVideo">Record Video</Link>
+          </li>
+        )}
       </ul>
 
       {loading ? null : !user ? (
